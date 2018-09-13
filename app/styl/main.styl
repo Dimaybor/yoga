@@ -1,0 +1,122 @@
+*
+	margin 0
+	padding 0 
+	box-sizing border-box
+
+body
+	font-family 'Open Sans', sans-serif
+	font-size 14px
+	line-height 22px
+
+h1
+	margin 0
+
+li
+	list-style none
+	outline none
+
+img 
+	max-width 100%
+
+a
+	text-decoration none
+	color #555555
+
+.wrapper
+
+	&-header
+		margin 0 auto
+		padding 0 20px
+		max-width 860px
+
+	&-big
+		margin 0 auto
+		padding 0 20px
+		max-width 1960px
+
+.main-header
+	position fixed
+	top 0
+	left 0
+	right 0
+	margin 0 auto
+	background-color #fff
+
+.main
+	&-logo
+		margin 0 140px
+		height 100%
+		
+		&__img
+			width 68px
+			height 68px
+
+		&__link
+			display block
+			height 68px
+
+	&-nav
+		display flex
+		align-items center
+		font-size 14px
+		line-height 24px
+
+	&-menu
+		display flex
+		width 100%
+		max-width 260px
+
+		&--to-right
+			justify-content flex-end
+			width 200px
+
+		&__item
+			display flex
+			align-items center
+			margin 0 12.5px
+			min-height 100px
+
+		&__link
+			position relative
+
+			&:hover
+				color #5363db
+
+				&::after
+					content ''
+					position absolute
+					bottom 0
+					left 50%
+					width 55%
+					height 1px
+					background-color #5363db
+					transform translateX(-50%)
+
+.general
+
+	&-container
+		display flex
+		justify-content center
+		padding-top 200px
+		width 100%
+		max-width 1920px
+		height 762px
+		background url('../img/bg.png') center no-repeat
+		background-size cover
+
+	&-form
+		width 100%
+		max-width 300px
+		height 390px
+		border-radius 20px
+		background-color #fff
+
+	&-form + &-info
+		margin-left 85px
+
+	&-info
+		width 100%
+		max-width 515px
+
+	&-header
+		color #fff
