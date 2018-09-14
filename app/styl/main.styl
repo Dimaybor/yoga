@@ -1,3 +1,7 @@
+@font-face
+	font-family "Freestyle Script"
+	src url(../fonts/10036.ttf)
+
 *
 	margin 0
 	padding 0 
@@ -7,6 +11,8 @@ body
 	font-family 'Open Sans', sans-serif
 	font-size 14px
 	line-height 22px
+	font-weight 400
+	color #555555
 
 h1
 	margin 0
@@ -23,6 +29,9 @@ a
 	color #555555
 
 .wrapper
+	margin 0 auto
+	padding 0 20px
+	max-width 1250px
 
 	&-header
 		margin 0 auto
@@ -93,6 +102,8 @@ a
 					transform translateX(-50%)
 
 .general
+	max-height 700px
+	overflow hidden
 
 	&-container
 		display flex
@@ -105,18 +116,176 @@ a
 		background-size cover
 
 	&-form
+		padding 35px 30px
 		width 100%
 		max-width 300px
 		height 390px
 		border-radius 20px
 		background-color #fff
+		box-shadow 10px 10px 25px 2px #23232338
+
+		&__name
+			margin-bottom 25px
+			font-size 26px
+			color #5363db
+
+		&__field
+			padding 0 10px
+			width 100%
+			height 50px
+			font-weight 600
+			border 0px
+			border-radius 10px
+			background-color #f2f2f2
+			outline none
+
+			& + &
+				margin-top 17px
+
+		&__field + &__btn-wrapper
+			margin-top 30px
+
+		&__btn-wrapper
+			display flex
+			justify-content flex-end
+			width 100%
+			height 50px
+			
+		&__btn
+			width 100%
+			max-width 170px
+			font-weight 700
+			color #fff
+			background-color #5b6ceb
+			cursor pointer
 
 	&-form + &-info
 		margin-left 85px
 
 	&-info
-		width 100%
+		padding-top 50px
 		max-width 515px
+		color #fff
+	
+	&-col
+		display flex
+		width 50%
+
+		&--left
+			justify-content flex-end
+			padding-right 20px
+
+		&--right
+			padding-left 65px
 
 	&-header
-		color #fff
+		max-width 485px
+		font-size 48px
+		line-height 72px
+		font-weight 700
+		text-transform uppercase
+
+.subtitle
+	padding-top 35px
+	max-width 280px
+	font-family "Freestyle Script", sans-serif
+	font-size 40px
+	line-height 45px
+
+.secondary-header
+	font-size 30px
+	line-height 34px
+	font-weight 700
+	text-transform uppercase
+	color #5b6ceb
+
+.classes
+	padding 110px 0 120px
+
+	&-caption
+		display flex
+		flex-direction column
+		align-items center
+
+	.subtitle
+		padding-top 18px
+		color #777777
+	
+	&-container
+		margin-top 65px
+
+	&__img
+		width 100%
+		max-width 270px
+
+	&-list
+		display flex
+		flex-wrap wrap
+
+		&__item
+			display flex
+			margin 0 15px 25px
+			width 100%
+			max-width 575px
+			height 300px
+			border-radius 10px
+			box-shadow 10px 10px 30px 2px #eeeeee
+
+		&__text
+			padding 45px 30px 30px
+			width 100%
+
+		&__title
+			margin-bottom 30px
+			font-size 20px
+			line-height 20px
+			font-weight 700
+			color #777777
+			text-transform uppercase
+
+		&__description
+			max-width 222px
+
+			&--color
+				color #999999
+
+			& + &
+				margin-top 10px
+
+.gallery
+	.wrapper-big
+		padding 0
+		max-width 1920px
+
+	&-list
+		display flex
+		flex-wrap wrap
+
+		&__item
+			position relative
+			width 100%
+			max-width 480px
+			height 350px
+
+			&:hover .gallery-hover
+				visibility visible
+				transition all 0.4s
+				cursor pointer
+
+			img
+				line-height 0
+				height 100%
+
+.gallery-hover
+	position absolute
+	top 0
+	left 0
+	display flex
+	width 100%
+	height 100%
+	background-color #7c89ef
+	visibility hidden
+	opacity 0.9
+	
+
+			
