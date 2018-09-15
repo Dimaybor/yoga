@@ -1,3 +1,5 @@
+$('.about-slider').slick();
+
 $('.staff').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
