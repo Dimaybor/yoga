@@ -463,13 +463,18 @@ a
 			background-color #2739c3
 			transition all 0.3s
 
+.personnel
+	position relative
+
 .staff
-	display flex
-	padding 38px 140px 38px 60px
-	width 100%
-	min-height 250px
 	background-color #fff
 	box-shadow 10px 10px 35px 15px #e2e0e0b3
+
+	&__item
+		display flex
+		padding 38px 140px 38px 60px
+		width 100%
+		min-height 250px
 
 	&__img
 		width 148px
@@ -517,6 +522,31 @@ a
 		color #5b6ceb
 
 	&-nav
-		width 100%
-		max-width 280px
+		position absolute
+		bottom -15%
+		left 345px
+		
+		&__unit
+			display flex
+			justify-content center
+			width 100%
+			max-width 280px
+			height 72px
+
+		&__master
+			margin-left 10px
+			display flex
+			flex-direction column
+			justify-content center
+
+		&__img 
+			width 72px
+			height 72px
+
+		&__name
+			font-weight 700
+
+		&__position
+			font-size 12px
+
 
