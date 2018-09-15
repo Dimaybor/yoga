@@ -354,6 +354,18 @@ a
 
 .shop
 	padding-top 100px
+	min-height 1150px
+	overflow hidden
+
+	.wrapper-big
+		position relative
+
+	&-bg
+		z-index -1
+		position absolute
+		bottom -410px
+		right -30px
+		object-fit cover
 
 	&-list
 		display flex
@@ -451,18 +463,60 @@ a
 			background-color #2739c3
 			transition all 0.3s
 
-		
+.staff
+	display flex
+	padding 38px 140px 38px 60px
+	width 100%
+	min-height 250px
+	background-color #fff
+	box-shadow 10px 10px 35px 15px #e2e0e0b3
 
+	&__img
+		width 148px
+		height 148px
 
+	&-description
+		position relative
+		margin-top 10px
+		padding 0 45px 0 80px
+		max-width 800px
+		font-style italic
 
+		&:after
+			content ''
+			position absolute
+			top 50%
+			left 45px
+			width 2px
+			height 75px
+			background-color #d7d7d7
+			transform translateY(-50%)
 
+	&-quotes
+		position absolute
+		font-size 60px
+		font-style normal
+		color #5b6ceb
 
+		&--first
+			top 15px
+			left 36px
 
+		&--last
+			bottom 80px
+			right -30px
 
+	&-position
+		margin-top 25px
+		font-style normal
 
-		
+	&-name
+		font-size 16px
+		font-style normal
+		font-weight 700
+		color #5b6ceb
 
-		
-		
+	&-nav
+		width 100%
+		max-width 280px
 
-			
