@@ -13,6 +13,9 @@ html(lang="en")
 		header#header.main-header
 			.wrapper-header
 				nav.main-nav.open-nav
+					.main-logo
+						a.main-logo__link(href='index.html')
+							img.main-logo__img(src='img/logo.png' alt='alt')
 					ul.main-menu
 						li.main-menu__item
 							a.main-menu__link(href='#') About us
@@ -20,9 +23,6 @@ html(lang="en")
 							a.main-menu__link(href='#') Reservation
 						li.main-menu__item
 							a.main-menu__link(href='#') Gallery
-					.main-logo
-						a.main-logo__link(href='index.html')
-							img.main-logo__img(src='img/logo.png' alt='alt')
 					ul.main-menu.main-menu--to-right
 						li.main-menu__item
 							a.main-menu__link(href='#') Blog
@@ -197,21 +197,115 @@ html(lang="en")
 				.wrapper
 					.personnel
 						.staff
-							.staff__item
-								.staff__img
-									img(src='img/photo-trainer-1.png' alt='alt') 
-								.staff-description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
-									span.staff-quotes.staff-quotes--first “
-									span.staff-quotes.staff-quotes--last ”
-									p.staff-position Trainer
-									p.staff-name Laura Shepard
+							.staff-item
+								.staff-item__container
+									.staff__img
+										img(src='img/photo-trainer-1.png' alt='alt') 
+									.staff-description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+										span.staff-quotes.staff-quotes--first “
+										span.staff-quotes.staff-quotes--last ”
+										p.staff-position Trainer
+										p.staff-name Laura Shepard
+							.staff-item
+								.staff-item__container
+									.staff__img
+										img(src='img/photo-next.png' alt='alt') 
+									.staff-description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+										span.staff-quotes.staff-quotes--first “
+										span.staff-quotes.staff-quotes--last ”
+										p.staff-position Trainer
+										p.staff-name Sara Taylor
+							.staff-item
+								.staff-item__container
+									.staff__img
+										img(src='img/photo-trainer-1.png' alt='alt') 
+									.staff-description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+										span.staff-quotes.staff-quotes--first “
+										span.staff-quotes.staff-quotes--last ”
+										p.staff-position Trainer
+										p.staff-name Laura Shepard
+							.staff-item
+								.staff-item__container
+									.staff__img
+										img(src='img/photo-next.png' alt='alt') 
+									.staff-description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+										span.staff-quotes.staff-quotes--first “
+										span.staff-quotes.staff-quotes--last ”
+										p.staff-position Trainer
+										p.staff-name Sara Taylor
 						.staff-nav
-							.staff-nav__unit
-								.staff-nav__img 
-									img(src='img/photo-trainer-1.png' alt='alt') 
-								.staff-nav__master
-									p.staff-nav__name Sara Taylor
-									p.staff-nav__position Trainer
+							.staff-nav__item
+								.staff-nav__unit
+									.staff-nav__img 
+										img(src='img/photo-next.png' alt='alt') 
+									.staff-nav__master
+										p.staff-nav__name Sara Taylor
+										p.staff-nav__position Trainer
+							.staff-nav__item
+								.staff-nav__unit
+									.staff-nav__img 
+										img(src='img/photo-trainer-1.png' alt='alt') 
+									.staff-nav__master
+										p.staff-nav__name Laura Shepard
+										p.staff-nav__position Trainer
+							.staff-nav__item
+								.staff-nav__unit
+									.staff-nav__img 
+										img(src='img/photo-next.png' alt='alt') 
+									.staff-nav__master
+										p.staff-nav__name Sara Taylor
+										p.staff-nav__position Trainer
+							.staff-nav__item
+								.staff-nav__unit
+									.staff-nav__img 
+										img(src='img/photo-trainer-1.png' alt='alt') 
+									.staff-nav__master
+										p.staff-nav__name Laura Shepard
+										p.staff-nav__position Trainer
+		footer.main-footer
+			.wrapper
+				.main-footer__container
+					.main-footer__col
+						p.main-footer__title about
+						p.main-footer__content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad m inim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+						.social-link
+							a.social-link__item(href='#')
+								img.social-link__icon(src='img/social-1.png' alt='alt')
+							a.social-link__item(href='#')
+								img.social-link__icon(src='img/social-2.png' alt='alt')
+							a.social-link__item(href='#')
+								img.social-link__icon(src='img/social-3.png' alt='alt')
+							a.social-link__item(href='#')
+								img.social-link__icon(src='img/social-4.png' alt='alt')
+							a.social-link__item(href='#')
+								img.social-link__icon(src='img/social-5.png' alt='alt')
+					.main-footer__col
+						p.main-footer__title contact us
+						.main-contacts
+							.main-contacts__col
+								.main-contacts__item
+									img.main-contacts__icon(src='img/location.png' alt='alt')
+									p 5419 Joseph Mountains 
+										span Apt. 716
+								.main-contacts__item
+									img.main-contacts__icon(src='img/phone-call.png' alt='alt')
+									p.main-contacts__numbers
+										span +1 234 567 89
+										span +1 234 567 89
+							.main-contacts__col
+								.main-contacts__item
+									img.main-contacts__icon.main-contacts__icon--small(src='img/mail.png' alt='alt')
+									p
+										a(href='#') joga.info@example.com
+								.main-contacts__item
+									img.main-contacts__icon.main-contacts__icon--position(src='img/planet-earth.png' alt='alt')
+									p
+										a(href='#') www.example.com
+			.copyright
+				p.copyright-text Copyright  ©  2016-2017 Yoga classes
+				img.copyright-logo(src='img/logo-dzencode.png' alt='alt')
+
+						
 
 
 

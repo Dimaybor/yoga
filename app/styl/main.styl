@@ -52,9 +52,12 @@ a
 	background-color #fff
 
 .main
+
 	&-logo
-		margin 0 140px
-		height 100%
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
 		
 		&__img
 			width 68px
@@ -65,6 +68,7 @@ a
 			height 68px
 
 	&-nav
+		position relative
 		display flex
 		align-items center
 		font-size 14px
@@ -74,6 +78,9 @@ a
 		display flex
 		width 100%
 		max-width 260px
+
+		& + &
+			margin-left 360px
 
 		&--to-right
 			justify-content flex-end
@@ -353,12 +360,13 @@ a
 			text-align center
 
 .shop
-	padding-top 100px
-	min-height 1150px
+	padding 100px 0 200px
 	overflow hidden
 
 	.wrapper-big
 		position relative
+		padding 0 108px
+		max-width 2136px
 
 	&-bg
 		z-index -1
@@ -380,7 +388,7 @@ a
 			border-radius 10px
 			background-color #fff
 			overflow hidden
-			box-shadow 10px 10px 35px 15px #e2e0e0b3
+			box-shadow 10px 10px 35px 15px rgba(236, 232, 232, 0.702)
 
 		&__container
 			display flex
@@ -468,17 +476,22 @@ a
 
 .staff
 	background-color #fff
-	box-shadow 10px 10px 35px 15px #e2e0e0b3
+	box-shadow 10px 10px 35px 15px rgba(236, 232, 232, 0.702)
 
-	&__item
-		display flex
-		padding 38px 140px 38px 60px
-		width 100%
-		min-height 250px
+	&-item
+		&__container
+			display flex
+			padding 38px 140px 38px 60px
+			width 100%
+			min-height 250px
 
 	&__img
+		flex-shrink 0
 		width 148px
 		height 148px
+
+		img
+			width 100%
 
 	&-description
 		position relative
@@ -523,14 +536,18 @@ a
 
 	&-nav
 		position absolute
-		bottom -15%
-		left 345px
+		bottom -36px
+		left 314px
+		max-width 185px
+		height 72px
+
+		&__item
+			width 185px
 		
 		&__unit
 			display flex
 			justify-content center
-			width 100%
-			max-width 280px
+			width 185px
 			height 72px
 
 		&__master
@@ -550,3 +567,181 @@ a
 			font-size 12px
 
 
+//-------------- customization slick slider (start)
+
+
+.slick-prev:before,
+.slick-next:before
+	opacity 1
+
+.slick-prev:before
+	content ''
+	top 50%
+	left 50%
+	display block
+	width 6px
+	height 6px
+	border 2px solid #5b6ceb
+	border-width 0 2px 2px 0
+	transform translateX(11px) rotate(135deg)
+
+.slick-next:before
+	content ''
+	top 50%
+	left 50%
+	display block
+	width 6px
+	height 6px
+	border 2px solid #5b6ceb
+	border-width 0 2px 2px 0
+	transform translateX(8px) rotate(-45deg)
+
+.slick-prev
+	left -50px
+
+.slick-next
+	right -50px
+
+.slick-dotted.slick-slider
+	margin-bottom 0
+
+.slick-prev,
+.slick-next
+	width 30px
+	height 30px
+	border-radius 50%
+	border 2px solid transparent
+	background-color #fff
+	box-shadow 6px 7px 13px 4px rgba(216, 214, 214, 0.702)
+
+.slick-prev:hover,
+.slick-next:hover
+	outline none
+	border 2px solid #5b6ceb
+
+.slick-prev:focus,
+.slick-next:focus
+	outline none
+	background-color #fff
+
+.slick-dots
+	transform translate(855px, -190px) rotate(90deg)
+
+.slick-dots li
+	top 0px
+	padding 0
+	margin 0 9px
+	width 20px
+	height 20px
+	border-radius 50%
+	border 2px solid #d7d7d7
+
+	&:hover
+		border-color #5b6ceb
+
+.slick-dots li button:before
+	content ''
+	top 50%
+	left 50%
+	width 10px
+	height 10px
+	border-radius 50%
+	background-color #5b6ceb
+	transform translate(-50%, -50%)
+	opacity 0
+
+.slick-dots li.slick-active
+	border-color #5b6ceb
+
+.slick-dots li.slick-active button:before
+	opacity 1
+
+
+//-------------- customization slick slider (end)
+
+
+.main-footer
+	padding-top 90px
+	background-color #5b6ceb
+	color #fff
+
+	&__container
+		display flex
+
+	&__col
+		padding-bottom 100px
+		width 50%
+
+	&__title
+		font-size 18px
+		font-weight 700
+		text-transform uppercase
+
+	&__title + &__content, .main-contacts
+		margin-top 55px
+
+	&__content
+		max-width 470px
+
+		& + .social-link
+			margin-top 55px
+	
+.main-contacts
+	display flex
+	flex-wrap wrap
+	max-width 580px
+
+	&__col
+		width 50%
+	
+	&__item
+		display flex
+		max-width 200px
+		min-height 65px
+
+	&__icon
+		margin 6px 15px 0 0
+		height 21px
+
+		&--small
+			height 13px
+
+		&--position
+			margin-top 2px
+
+	&__numbers
+		span
+			display block
+
+	a
+		color #fff
+
+.social-link
+	display flex
+
+	&__item
+		& + &
+			margin-left 15px
+			
+	&__icon
+		height 21px
+
+.copyright
+	padding 40px 0
+	display flex
+	flex-direction column
+	align-items center
+	background-color #5363d8
+	
+	&-text
+		font-size 16px
+		color #b7bffc
+
+	&-text + &-logo
+		margin-top 40px
+
+	&-logo
+		width 146px
+
+			
+	
