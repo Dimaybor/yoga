@@ -2,7 +2,8 @@ $('.general-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 4000,
+  arrows: false
 });
 
 $('.about-slider').slick();
@@ -22,4 +23,9 @@ $('.staff-nav').slick({
   centerMode: true,
   centerPadding: false,
   focusOnSelect: true
+});
+
+$(function() {
+  $('.general-select').selectize();
+    placeholder: true
 });

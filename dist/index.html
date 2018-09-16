@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/selectize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
   </head>
@@ -30,14 +31,27 @@
     </header>
     <section class="general">
       <div class="wrapper-big">
+        <div class="general-slider">
+          <div class="general-slider__item general-slider__item-1"></div>
+          <div class="general-slider__item general-slider__item-2"></div>
+          <div class="general-slider__item general-slider__item-3"></div>
+        </div>
         <div class="general-container">
           <div class="general-col general-col--left">
             <div class="general-form">
               <form action="#" method="post">
                 <p class="general-form__name">Trial Class</p>
-                <input class="general-form__field" type="text" name="name" placeholder="Enter your name">
-                <input class="general-form__field" type="text" name="number" placeholder="Enter your phone">
-                <input class="general-form__field" type="text" name="number" placeholder="Enter your phone">
+                <input class="general-form__field general-form__validation" type="text" name="name" placeholder="Enter your name" pattern="D [^0-9]" required>
+                <input class="general-form__field general-form__validation" type="tel" name="phone" placeholder="Enter your phone" minlength="13" maxlength="13" required>
+                <div class="general-form__select">
+                  <select class="general-select" name="class">
+                    <option class="option-hide" value="">Chose your class</option>
+                    <option value="1">Yoga for health</option>
+                    <option value="2">Yoga for lose weight</option>
+                    <option value="3">Yoga for children</option>
+                    <option value="4">Yoga for elderly</option>
+                  </select>
+                </div>
                 <div class="general-form__btn-wrapper">
                   <input class="general-form__field general-form__btn" type="submit" value="Try it">
                 </div>

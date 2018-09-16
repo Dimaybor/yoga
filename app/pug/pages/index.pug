@@ -7,6 +7,7 @@ html(lang="en")
 		link(rel='stylesheet' type='text/css' href='css/normalize.css')
 		link(rel='stylesheet' type='text/css' href='css/slick.css')
 		link(rel='stylesheet' type='text/css' href='css/slick-theme.css')
+		link(rel='stylesheet' type='text/css' href='css/selectize.css')
 		link(rel='stylesheet' type='text/css' href='css/main.css')
 		link(rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700")
 	body
@@ -32,21 +33,24 @@ html(lang="en")
 							a.main-menu__link(href='#') Shop
 		section.general
 			.wrapper-big
-				//- .general-slider
-				//- 	.general-slider__item
-				//- 			img.general-slider__img(src='img/bg.png' alt='alt')
-				//- 	.general-slider__item
-				//- 			img.general-slider__img(src='img/bg.png' alt='alt')
-				//- 	.general-slider__item
-				//- 			img.general-slider__img(src='img/bg.png' alt='alt')
+				.general-slider
+					.general-slider__item.general-slider__item-1
+					.general-slider__item.general-slider__item-2
+					.general-slider__item.general-slider__item-3
 				.general-container
 					.general-col.general-col--left
 						.general-form
 							form(action='#' method='post')
 								p.general-form__name Trial Class
-								input.general-form__field(type='text' name='name' placeholder='Enter your name')
-								input.general-form__field(type='text' name='number' placeholder='Enter your phone')
-								input.general-form__field(type='text' name='number' placeholder='Enter your phone')
+								input.general-form__field.general-form__validation(type='text' name='name' placeholder='Enter your name' pattern='\D [^0-9]' required)
+								input.general-form__field.general-form__validation(type='tel' name='phone' placeholder='Enter your phone' minlength="13" maxlength="13" required)
+								.general-form__select
+									select.general-select(name='class')
+										option.option-hide(value='') Chose your class
+										option(value='1') Yoga for health
+										option(value='2') Yoga for lose weight
+										option(value='3') Yoga for children
+										option(value='4') Yoga for elderly
 								.general-form__btn-wrapper
 									input.general-form__field.general-form__btn(type='submit' value='Try it')
 					.general-col.general-col--right
