@@ -1,0 +1,12 @@
+@media screen and (max-width: 1440px) {
+  .personnel .slick-dots {
+    position: fixed;
+    right: 200px;
+    bottom: 200px;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lZGlhLXF1ZXJpZXMuc3R5bCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBcUM7QUFFakM7SUFDRSxVQUFTLE1BQVQ7SUFDQSxPQUFNLE1BQU47SUFDQSxRQUFPLE1BQVA7SUFDQSxXQUF3QixnQkFBeEIiLCJmaWxlIjoibWVkaWEtcXVlcmllcy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIgQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMTQ0MHB4KVxuICAucGVyc29ubmVsXG4gICAgLnNsaWNrLWRvdHNcbiAgICAgIHBvc2l0aW9uIGZpeGVkXG4gICAgICByaWdodCAyMDBweFxuICAgICAgYm90dG9tIDIwMHB4XG4gICAgICB0cmFuc2Zvcm0gdHJhbnNsYXRlKDAsIDApXG4iXX0= */

@@ -19,18 +19,18 @@ html(lang="en")
 							img.main-logo__img(src='img/logo.png' alt='alt')
 					ul.main-menu
 						li.main-menu__item
-							a.main-menu__link(href='#') About us
+							a.main-menu__link(href='#scroll-about') About us
 						li.main-menu__item
-							a.main-menu__link(href='#') Reservation
+							a.main-menu__link(href='#scroll-reservation') Reservation
 						li.main-menu__item
-							a.main-menu__link(href='#') Gallery
+							a.main-menu__link(href='#scroll-gallery') Gallery
 					ul.main-menu.main-menu--to-right
 						li.main-menu__item
-							a.main-menu__link(href='#') Blog
+							a.main-menu__link(href='#scroll-blog') Blog
 						li.main-menu__item
-							a.main-menu__link(href='#') Elements
+							a.main-menu__link(href='#scroll-elements') Elements
 						li.main-menu__item
-							a.main-menu__link(href='#') Shop
+							a.main-menu__link(href='#scroll-shop') Shop
 		section.general
 			.wrapper-big
 				.general-slider
@@ -42,7 +42,7 @@ html(lang="en")
 						.general-form
 							form(action='#' method='post')
 								p.general-form__name Trial Class
-								input.general-form__field.general-form__validation(type='text' name='name' placeholder='Enter your name' pattern='\D [^0-9]' required)
+								input.general-form__field.general-form__validation(type='text' name='name' placeholder='Enter your name' required)
 								input.general-form__field.general-form__validation(type='tel' name='phone' placeholder='Enter your phone' minlength="13" maxlength="13" required)
 								.general-form__select
 									select.general-select(name='class')
@@ -57,7 +57,7 @@ html(lang="en")
 						.general-info
 							h1.general-header Just Balance your Mind & Body
 							p.subtitle Create the healthy living for yourself
-		section.classes
+		section#scroll-reservation.classes
 			.wrapper
 				.classes-caption
 					h2.secondary-header yoga feature program 
@@ -65,30 +65,34 @@ html(lang="en")
 				.classes-container
 					ul.classes-list
 						li.classes-list__item
-							img.classes-list__img(src='img/classes-1.png' alt='alt')
-							.classes-list__text 
-								p.classes-list__title Yoga For Health
-								p.classes-list__description Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-								p.classes-list__description.classes-list__description--color Ashtanga - Hatha
+							a.classes-list__link(href='#')
+								img.classes-list__img(src='img/classes-1.png' alt='alt')
+								.classes-list__text 
+									p.classes-list__title Yoga For Health
+									p.classes-list__description Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+									p.classes-list__description.classes-list__description--color Ashtanga - Hatha
 						li.classes-list__item
-							img.classes-list__img(src='img/classes-2.png' alt='alt')
-							.classes-list__text 
-								p.classes-list__title Yoga For Lose Weight
-								p.classes-list__description Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-								p.classes-list__description.classes-list__description--color Ashtanga - Hatha
+							a.classes-list__link(href='#')
+								img.classes-list__img(src='img/classes-2.png' alt='alt')
+								.classes-list__text 
+									p.classes-list__title Yoga For Lose Weight
+									p.classes-list__description Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+									p.classes-list__description.classes-list__description--color Ashtanga - Hatha
 						li.classes-list__item
-							img.classes-list__img(src='img/classes-3.png' alt='alt')
-							.classes-list__text 
-								p.classes-list__title Yoga For Children
-								p.classes-list__description Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-								p.classes-list__description.classes-list__description--color Ashtanga - Hatha
+							a.classes-list__link(href='#')
+								img.classes-list__img(src='img/classes-3.png' alt='alt')
+								.classes-list__text 
+									p.classes-list__title Yoga For Children
+									p.classes-list__description Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+									p.classes-list__description.classes-list__description--color Ashtanga - Hatha
 						li.classes-list__item
-							img.classes-list__img(src='img/classes-4.png' alt='alt')
-							.classes-list__text 
-								p.classes-list__title Yoga For Elderly
-								p.classes-list__description Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-								p.classes-list__description.classes-list__description--color Ashtanga - Hatha
-		.gallery
+							a.classes-list__link(href='#')
+								img.classes-list__img(src='img/classes-4.png' alt='alt')
+								.classes-list__text 
+									p.classes-list__title Yoga For Elderly
+									p.classes-list__description Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+									p.classes-list__description.classes-list__description--color Ashtanga - Hatha
+		#scroll-gallery.gallery
 			.wrapper-big
 				ul.gallery-list
 					li.gallery-list__item
@@ -123,7 +127,7 @@ html(lang="en")
 						.gallery-hover
 							.gallery-hover__search
 						img(src='img/photo-8.png' alt='alt')
-		section.about
+		section#scroll-about.about
 			.wrapper
 				.about-container
 					.about-col
@@ -140,7 +144,7 @@ html(lang="en")
 							.about-item
 								.about-item__container
 									img.about-slider__img(src='img/about.png' alt='alt')
-		.elements
+		#scroll-elements.elements
 			.wrapper-big
 				.elements-container
 					.wrapper
@@ -177,7 +181,7 @@ html(lang="en")
 								img.elements-list__img(src='img/icon-8.png' alt='alt')
 								p.elements-list__title lower blood pressure
 								p.elements-list__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
-		.shop
+		#scroll-shop.shop
 			.wrapper-big
 				img.shop-bg(src='img/bg-3.png' alt='alt')
 				.wrapper
@@ -219,7 +223,7 @@ html(lang="en")
 								.shop-info__item.shop-info__item--line entry time: 8a.m – 8p.m
 								.shop-info__item nutrition advicer: yes
 				.wrapper
-					.personnel
+					#scroll-blog.personnel
 						.staff
 							.staff-item
 								.staff-item__container
