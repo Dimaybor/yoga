@@ -60,13 +60,13 @@
 
 	.open-nav
 		position fixed
-		left -100vw
+		left -110vw
 		align-items flex-start
 		margin-top 100px
 		transition all 0.3s
 
 		&--active
-			transform translateX(100vw)
+			transform translateX(110vw)
 
 	.menu-open
 		display block
@@ -147,6 +147,19 @@
 			&--last
 				bottom 20%
 				right -20px
+		
+	.main-footer
+		padding-top 45px
+
+		&__col
+			padding 0 20px 25px
+
+		&__title + &__content, .main-contacts
+			margin-top 30px
+		
+		&__container
+			flex-direction column
+			align-items center
 
 @media screen and (max-width: 768px)
 
@@ -181,11 +194,14 @@
 				height 40px
 
 		.selectize-input
-			z-index 999
 			height 40px
 
 			input
 				height 40px
+
+			& > *
+				height 40px
+				line-height 40px
 
 		&-select
 			max-width 100%
@@ -259,7 +275,66 @@
 			&__img
 				width 50px
 				height 50px
+	.staff
+		&-item 
+			&__container
+				flex-direction column
+				align-items center
 
+		&-description
+			margin-top 50px
+			padding 0
+			text-align center
+
+			&:after
+				top -65px
+				left 50%
+				height 100px
+				transform translate(-50%, 0) rotate(90deg)
+
+		&-quotes
+			&--first
+				left -14px
+			
+			&--last
+				bottom 15%
+		
+		&-nav
+			bottom -95px
+			left 50%
+			transform translateX(-50%)
+
+	.personnel
+		.slick-dots
+			transform translate(0, 100%)
+
+	.main-footer
+		&__col
+			width 100%
+
+		&__content
+			max-width 100%
+		
+	.shop
+		&-list
+			&__item
+				padding-bottom 100px
+				max-width 300px
+				min-height auto
+
+			&__price
+				padding-top 30px
+				height 120px
+
+				& span:nth-child(1)
+					font-size 27px
+					line-height 27px
+				
+				& span:nth-child(2)
+					font-size 55px
+		
+		&-info
+			padding 15px 0
 
 @media screen and (max-width: 570px)
 
@@ -280,10 +355,48 @@
 		&__img
 			width auto
 			object-fit cover
+	
+	.main-menu
+		min-width 100vw
 
-
+	.shop
+		.wrapper--padding
+			padding 0
 
 @media screen and (max-width: 480px)
+
+	.general-header
+		font-size 36px
+		line-height 45px
+
+	.secondary-header
+		font-size 30px
+		text-align center
+
+	.subtitle
+		font-size 26px
+
+	.about 
+		.slick-prev
+			top 120%
+			left 45px
+
+		.slick-next
+			top 120%
+			right 45px
+		
+	.staff
+		&-item
+			&__container
+				padding 10px
+		
+		&-quotes
+			&--last
+				right -5px
+			
+			&--first
+				top -5px
+				left -5px
 
 	.classes
 		&-list
@@ -292,4 +405,27 @@
 
 			&__description
 				max-width 100%
+	
+	.main-contacts
+		flex-direction column
+		align-items center
+
+		&__col
+			width 100%
+			
+	.social-link
+		justify-content center
+
+	.main-footer
+		&__title
+			text-align center
+		
+		&__col + &__col
+			margin-top 30px
+
+	.copyright
+		padding 20px 0
+
+		&-text + &-logo
+			margin-top 20px
 
