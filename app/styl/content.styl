@@ -364,14 +364,15 @@ a
 	&-container
 		margin-top 65px
 
-	&__img
-		width 100%
-		max-width 270px
-
 	&-list
 		display flex
 		flex-wrap wrap
 		justify-content center
+
+		&__img
+			width 100%
+			max-width 270px
+			flex-shrink 0
 
 		&__item
 			margin 0 15px 25px
@@ -479,7 +480,8 @@ a
 		margin 24px 0
 
 	&-slider
-		width 570px
+		width 100%
+		max-width 570px
 		height 300px
 	
 	&-item

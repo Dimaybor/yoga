@@ -17,6 +17,9 @@
 		&__item
 			margin-bottom 40px
 
+			& + &
+				margin-left 0
+
 @media screen and (max-width: 1280px)
 
 	.about
@@ -147,22 +150,146 @@
 
 @media screen and (max-width: 768px)
 
-	.classes-list
-		&__item
+	.main
+		&-header
+			height 60px
+
+		&-logo
+			&__img
+				width 40px
+				height 40px
+
+			&__link
+				height 40px
+
+	.menu-open
+		top 10px
+		left 10px
+
+	.general
+		overflow visible
+
+		&-slider
+			top -40px
+
+		&-form
+			padding 20px 15px
+			max-width 270px
 			height auto
-		
+
+			&__field
+				height 40px
+
+		.selectize-input
+			z-index 999
+			height 40px
+
+			input
+				height 40px
+
+		&-select
+			max-width 100%
+
+		&-info
+			padding-top 0
+			text-align center
+
+		&-col
+			justify-content center
+			width 100%
+
+			.subtitle
+				padding-top 20px
+				max-width 100%
+
+			&--left
+				margin-top 30px
+				padding-right 0
+			&--right
+				padding-left 0
+
+		&-container
+			flex-direction column-reverse
+			padding-top 80px
+			height auto
+
+	.open-nav
+		margin-top 60px
+
+	.classes-list
 		&__img
-			object-fit contain
 			max-height 300px
 
 		&__text
 			padding 25px 20px 20px
 
+	.about
+
+		&-slider
+			height auto
+
+		&-col
+			display flex
+			flex-direction column
+			width 100%
+			align-items center
+
+		.slick-prev
+			left 5px
+
+		.slick-next
+			right 5px
+
+	.elements
+
+		&-container
+			padding-top 20px
+
+		&-list
+
+			&__item
+				margin 25px 0 0
+
+			&__title
+				font-size 16px
+
+			&__text
+				font-size 14px
+
+			&__img
+				width 50px
+				height 50px
 
 
-// @media screen and (max-width: 570px)
+@media screen and (max-width: 570px)
+
+	.classes-list
+		flex-direction column
+		flex-wrap nowrap
+		align-items center
+
+		&__item
+			margin 0 0 25px
+			max-width 260px
+			height auto
+			overflow hidden
+
+		&__link
+			flex-direction column
+		
+		&__img
+			width auto
+			object-fit cover
 
 
 
-// @media screen and (max-width: 480px)
+@media screen and (max-width: 480px)
+
+	.classes
+		&-list
+			&__text
+				padding 25px 5px 20px
+
+			&__description
+				max-width 100%
 
