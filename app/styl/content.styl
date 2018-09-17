@@ -38,6 +38,51 @@ a
 		margin 0 auto
 		max-width 1920px
 
+.menu-open
+	z-index 999
+	position fixed
+	top 25px
+	left 25px
+	display none
+	width 50px
+	height 50px
+	background-color transparent
+	cursor pointer
+	text-decoration none
+	border none	
+	outline none
+
+.menu-open > span
+	position absolute
+	left 50%
+	top 50%
+	display block
+	margin-left -20px
+	margin-top -1px
+	height 3px
+	width 40px
+	border-radius 30%
+	background-color #5b6ceb
+	
+.menu-open > span:first-child
+	margin-top -8px
+	transition all 0.2s
+	
+.menu-open > span:last-child
+	margin-top 6px
+	transition all 0.2s
+
+.menu-open--active > span:nth-child(2)
+	background-color transparent
+	
+.menu-open--active > span:first-child
+	margin-top 0
+	transform rotate(135deg)
+
+.menu-open--active > span:last-child
+	margin-top 0
+	transform rotate(-135deg)
+
 .main-header
 	z-index 9
 	position fixed
@@ -326,6 +371,7 @@ a
 	&-list
 		display flex
 		flex-wrap wrap
+		justify-content center
 
 		&__item
 			margin 0 15px 25px
@@ -516,7 +562,10 @@ a
 			border-radius 10px
 			background-color #fff
 			overflow hidden
-			box-shadow 10px 10px 35px 15px rgba(236, 232, 232, 0.702)
+			box-shadow 10px 10px 35px 15px rgba(148, 148, 148, 0.18)
+
+			& + &
+				margin-left 25px
 
 		&__container
 			display flex

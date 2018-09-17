@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-  link         = $('.menu-open');
-  openNav     = $('.open-nav')
-  nav_link     = $('.open-nav a')
+  link        = $('.menu-open'),
+  openNav     = $('.open-nav'),
+  nav_link    = $('.open-nav a')
   link.click(function() {
     link.toggleClass('menu-open--active');
     openNav.toggleClass('open-nav--active');
